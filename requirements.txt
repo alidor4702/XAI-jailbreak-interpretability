@@ -13,9 +13,8 @@ nltk
 captum
 
 # Internal tracing
-transformer-lens
+nnsight
 einops
-fancy-einsum
 
 # Datasets
 datasets
