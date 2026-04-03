@@ -27,9 +27,16 @@ def load_model(model_name=MODEL_NAME, max_seq_length=MAX_SEQ_LENGTH):
     )
     FastLanguageModel.for_inference(full_model)
 
-    # Extract the text-only language model from the multimodal wrapper
+    # Extract the text-only language model from the multimodal wrapper.
+    # We need the CausalLM model (with lm_head), not the bare base model.
     if hasattr(full_model, "language_model"):
-        model = full_model.language_model
+        lm = full_model.language_model
+        # If language_model is CausalLM (has lm_head), use it directly.
+        # Otherwise it's the base model — use full_model which wraps it.
+        if hasattr(lm, "lm_head"):
+            model = lm
+        else:
+            model = full_model
     else:
         model = full_model
 
