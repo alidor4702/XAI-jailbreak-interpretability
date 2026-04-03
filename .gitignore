@@ -37,3 +37,10 @@ results/*.log
 
 # Project proposal
 Docs/
+
+# Runtime artifacts
+outputs/
+unsloth_compiled_cache/
+
+# Local settings
+.claude/settings.local.json
