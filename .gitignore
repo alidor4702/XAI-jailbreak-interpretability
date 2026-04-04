@@ -39,7 +39,6 @@ results/*.log
 Docs/
 
 # Runtime artifacts
-outputs/
 unsloth_compiled_cache/
 
 # Local settings
