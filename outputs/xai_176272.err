@@ -1,0 +1,216 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:15<00:46, 15.48s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:31<00:31, 15.64s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:44<00:14, 14.56s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:48<00:00, 10.43s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:48<00:00, 12.15s/it]
+[__main__|ERROR]    Divergence failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 133, in analyze_example
+    cache_clean = cache_activations(model, tokenizer, clean_formatted)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 76, in cache_activations
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Patching failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 155, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 170, in activation_patch_by_layer
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Logit lens failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 179, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 271, in logit_lens
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Dashboard plot failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 244, in analyze_example
+    plot_example_dashboard(
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 121, in plot_example_dashboard
+    _plot_divergence_detailed(ax_b, divergence)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 197, in _plot_divergence_detailed
+    n = divergence["n_layers"]
+        ~~~~~~~~~~^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+[__main__|ERROR]    Divergence failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 133, in analyze_example
+    cache_clean = cache_activations(model, tokenizer, clean_formatted)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 76, in cache_activations
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Patching failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 155, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 170, in activation_patch_by_layer
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Logit lens failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 179, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 271, in logit_lens
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Dashboard plot failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 244, in analyze_example
+    plot_example_dashboard(
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 121, in plot_example_dashboard
+    _plot_divergence_detailed(ax_b, divergence)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 197, in _plot_divergence_detailed
+    n = divergence["n_layers"]
+        ~~~~~~~~~~^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+[__main__|ERROR]    Divergence failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 133, in analyze_example
+    cache_clean = cache_activations(model, tokenizer, clean_formatted)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 76, in cache_activations
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Patching failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 155, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 170, in activation_patch_by_layer
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Logit lens failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 179, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 271, in logit_lens
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Dashboard plot failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 244, in analyze_example
+    plot_example_dashboard(
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 121, in plot_example_dashboard
+    _plot_divergence_detailed(ax_b, divergence)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 197, in _plot_divergence_detailed
+    n = divergence["n_layers"]
+        ~~~~~~~~~~^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+[__main__|ERROR]    Divergence failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 133, in analyze_example
+    cache_clean = cache_activations(model, tokenizer, clean_formatted)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 76, in cache_activations
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Patching failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 155, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 170, in activation_patch_by_layer
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Logit lens failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 179, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 271, in logit_lens
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Dashboard plot failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 244, in analyze_example
+    plot_example_dashboard(
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 121, in plot_example_dashboard
+    _plot_divergence_detailed(ax_b, divergence)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 197, in _plot_divergence_detailed
+    n = divergence["n_layers"]
+        ~~~~~~~~~~^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+[__main__|ERROR]    Divergence failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 133, in analyze_example
+    cache_clean = cache_activations(model, tokenizer, clean_formatted)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 76, in cache_activations
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Patching failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 155, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 170, in activation_patch_by_layer
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Logit lens failed: Cannot find transformer layers in model
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 179, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 271, in logit_lens
+    n_layers, has_inner = _get_model_info(model)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 35, in _get_model_info
+    raise AttributeError("Cannot find transformer layers in model")
+AttributeError: Cannot find transformer layers in model
+[__main__|ERROR]    Dashboard plot failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 244, in analyze_example
+    plot_example_dashboard(
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 121, in plot_example_dashboard
+    _plot_divergence_detailed(ax_b, divergence)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py", line 197, in _plot_divergence_detailed
+    n = divergence["n_layers"]
+        ~~~~~~~~~~^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable

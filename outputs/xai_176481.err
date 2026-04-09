@@ -1,0 +1,37 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:11<00:33, 11.32s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:22<00:22, 11.40s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:33<00:10, 10.97s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:36<00:00,  7.83s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:36<00:00,  9.06s/it]
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 33267 (\N{CJK UNIFIED IDEOGRAPH-81F3}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/numpy/lib/function_base.py:2897: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/numpy/lib/function_base.py:2898: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/numpy/lib/function_base.py:2897: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/numpy/lib/function_base.py:2898: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/numpy/lib/function_base.py:2897: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/numpy/lib/function_base.py:2898: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]

@@ -1,0 +1,165 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:11<00:33, 11.32s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:22<00:22, 11.40s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:33<00:10, 10.99s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:36<00:00,  7.84s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:36<00:00,  9.07s/it]
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 476202c6-183f-4a9e-8cb5-a36d36a5a431)')' thrown while requesting HEAD https://huggingface.co/unsloth/Mistral-Small-3.1-24B-Instruct-2503-unsloth-bnb-4bit/resolve/main/chat_template.json
+[huggingface_hub.utils._http|WARNING]'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 476202c6-183f-4a9e-8cb5-a36d36a5a431)')' thrown while requesting HEAD https://huggingface.co/unsloth/Mistral-Small-3.1-24B-Instruct-2503-unsloth-bnb-4bit/resolve/main/chat_template.json
+Retrying in 1s [Retry 1/5].
+[huggingface_hub.utils._http|WARNING]Retrying in 1s [Retry 1/5].
+[__main__|ERROR]    Patching failed: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 163, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 287, in activation_patch_by_layer
+    with wrapped.trace(clean_ids):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/tracer.py", line 327, in __exit__
+    result = super().__exit__(exc_type, exc_value, traceback)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/base.py", line 694, in __exit__
+    self.backend(self)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/backends/execution.py", line 24, in __call__
+    raise wrap_exception(e, tracer.info) from None
+nnsight.NNsightException: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+[__main__|ERROR]    Logit lens failed: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 187, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 370, in logit_lens
+    hidden = saved[i][0, -1, :].to(model.device)  # (hidden_dim,)
+             ~~~~~~~~^^^^^^^^^^
+IndexError: too many indices for tensor of dimension 2
+[__main__|ERROR]    Patching failed: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 163, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 287, in activation_patch_by_layer
+    with wrapped.trace(clean_ids):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/tracer.py", line 327, in __exit__
+    result = super().__exit__(exc_type, exc_value, traceback)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/base.py", line 694, in __exit__
+    self.backend(self)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/backends/execution.py", line 24, in __call__
+    raise wrap_exception(e, tracer.info) from None
+nnsight.NNsightException: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+[__main__|ERROR]    Logit lens failed: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 187, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 370, in logit_lens
+    hidden = saved[i][0, -1, :].to(model.device)  # (hidden_dim,)
+             ~~~~~~~~^^^^^^^^^^
+IndexError: too many indices for tensor of dimension 2
+[__main__|ERROR]    Patching failed: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 163, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 287, in activation_patch_by_layer
+    with wrapped.trace(clean_ids):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/tracer.py", line 327, in __exit__
+    result = super().__exit__(exc_type, exc_value, traceback)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/base.py", line 694, in __exit__
+    self.backend(self)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/backends/execution.py", line 24, in __call__
+    raise wrap_exception(e, tracer.info) from None
+nnsight.NNsightException: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+[__main__|ERROR]    Logit lens failed: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 187, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 370, in logit_lens
+    hidden = saved[i][0, -1, :].to(model.device)  # (hidden_dim,)
+             ~~~~~~~~^^^^^^^^^^
+IndexError: too many indices for tensor of dimension 2
+[__main__|ERROR]    Patching failed: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 163, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 287, in activation_patch_by_layer
+    with wrapped.trace(clean_ids):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/tracer.py", line 327, in __exit__
+    result = super().__exit__(exc_type, exc_value, traceback)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/base.py", line 694, in __exit__
+    self.backend(self)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/backends/execution.py", line 24, in __call__
+    raise wrap_exception(e, tracer.info) from None
+nnsight.NNsightException: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+[__main__|ERROR]    Logit lens failed: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 187, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 370, in logit_lens
+    hidden = saved[i][0, -1, :].to(model.device)  # (hidden_dim,)
+             ~~~~~~~~^^^^^^^^^^
+IndexError: too many indices for tensor of dimension 2
+[__main__|ERROR]    Patching failed: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 163, in analyze_example
+    patch_results = activation_patch_by_layer(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 287, in activation_patch_by_layer
+    with wrapped.trace(clean_ids):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/tracer.py", line 327, in __exit__
+    result = super().__exit__(exc_type, exc_value, traceback)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/tracing/base.py", line 694, in __exit__
+    self.backend(self)
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/.venv/lib/python3.11/site-packages/nnsight/intervention/backends/execution.py", line 24, in __call__
+    raise wrap_exception(e, tracer.info) from None
+nnsight.NNsightException: Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 291, in activation_patch_by_layer
+    jb_last = jb_states[layer_idx][0, -1, :]  # (hidden_dim,)
+
+IndexError: too many indices for tensor of dimension 2
+[__main__|ERROR]    Logit lens failed: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/run_xai_analysis.py", line 187, in analyze_example
+    ll_clean = logit_lens(model, tokenizer, clean_formatted,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/users/rl_for_wsi/dor_ali/projects/XAI/src/tracing/activation_analysis.py", line 370, in logit_lens
+    hidden = saved[i][0, -1, :].to(model.device)  # (hidden_dim,)
+             ~~~~~~~~^^^^^^^^^^
+IndexError: too many indices for tensor of dimension 2

@@ -1,0 +1,57 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:14<00:44, 14.72s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:29<00:29, 14.62s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:42<00:13, 13.95s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:45<00:00,  9.69s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:45<00:00, 11.39s/it]
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 33267 (\N{CJK UNIFIED IDEOGRAPH-81F3}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 33267 (\N{CJK UNIFIED IDEOGRAPH-81F3}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 33267 (\N{CJK UNIFIED IDEOGRAPH-81F3}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 33267 (\N{CJK UNIFIED IDEOGRAPH-81F3}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 33267 (\N{CJK UNIFIED IDEOGRAPH-81F3}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 35828 (\N{CJK UNIFIED IDEOGRAPH-8BF4}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
+/usr/users/rl_for_wsi/dor_ali/projects/XAI/scripts/plotting.py:617: UserWarning: Glyph 33267 (\N{CJK UNIFIED IDEOGRAPH-81F3}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=200, bbox_inches="tight", facecolor="white")
